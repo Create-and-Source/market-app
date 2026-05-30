@@ -8,7 +8,7 @@ import {
   Loader2, CheckCircle2, XCircle, MessageCircle, Send, Car,
   FileText, Shield, Users, Mail, ChevronRight, Share2, Copy,
   BarChart3, Navigation, AlertTriangle, Hash, UserCircle,
-  Smartphone, Globe, Instagram, Heart, Repeat, Award
+  Smartphone, Globe, AtSign, Heart, Repeat, Award
 } from 'lucide-react'
 import './App.css'
 
@@ -1601,7 +1601,7 @@ function SettingsTab({ square, syncing, onConnect, onDisconnect, products, onSyn
               {profile.business && <p style={{ fontSize: 14, color: 'var(--accent)', fontWeight: 700, marginBottom: 8 }}>{profile.business}</p>}
               {profile.bio && <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 12, maxWidth: 300, margin: '0 auto 12px' }}>{profile.bio}</p>}
               <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-                {profile.instagram && <span style={{ fontSize: 13, color: 'var(--text-secondary)' }}><Instagram size={14} style={{ verticalAlign: -2 }} /> {profile.instagram}</span>}
+                {profile.instagram && <span style={{ fontSize: 13, color: 'var(--text-secondary)' }}><AtSign size={14} style={{ verticalAlign: -2 }} /> {profile.instagram}</span>}
                 {profile.website && <span style={{ fontSize: 13, color: 'var(--text-secondary)' }}><Globe size={14} style={{ verticalAlign: -2 }} /> {profile.website}</span>}
                 {profile.email && <span style={{ fontSize: 13, color: 'var(--text-secondary)' }}><Mail size={14} style={{ verticalAlign: -2 }} /> {profile.email}</span>}
               </div>

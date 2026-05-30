@@ -321,6 +321,26 @@ textarea.form-input { min-height: 80px; resize: vertical; }
 }
 .list-item-row:last-child { border-bottom: none; }
 
+/* Sync Toast */
+.sync-toast {
+  position: fixed; top: 72px; left: 50%; transform: translateX(-50%);
+  z-index: 1500; display: flex; align-items: center; gap: 8px;
+  padding: 12px 20px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 600;
+  box-shadow: var(--shadow-lg); cursor: pointer; max-width: 90%; animation: slideDown 0.3s ease;
+}
+.sync-toast.success { background: var(--green-light); color: var(--green); border: 1px solid var(--green); }
+.sync-toast.error { background: var(--red-light); color: var(--red); border: 1px solid var(--red); }
+.sync-toast-close { background: none; border: none; color: inherit; cursor: pointer; margin-left: 8px; }
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+/* Spinner */
+.spin { animation: spin 1s linear infinite; }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
 /* Responsive */
 @media (max-width: 768px) {
   .main-content { padding: 16px; }

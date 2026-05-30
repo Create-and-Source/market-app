@@ -1,45 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-  --bg: #FAF7F2;
-  --card: #FFFFFF;
-  --surface: #F0EBE3;
-  --surface-hover: #E8E1D6;
-  --border: #DDD5C9;
-  --border-light: #EAE4DA;
-  --text: #000000;
-  --text-secondary: #555555;
-  --text-tertiary: #7A7A7A;
-  --text-muted: #999999;
-  --accent: #B8693B;
-  --accent-hover: #A05A30;
-  --accent-light: #F3E4D5;
-  --accent-bg: #FDF6EF;
-  --green: #2D7A2D;
-  --green-light: #E4F2E4;
-  --green-bg: #F0F8F0;
-  --red: #C03030;
-  --red-light: #FCE8E8;
-  --yellow: #B8860B;
-  --yellow-light: #FFF5D6;
-  --blue: #2E6BB0;
-  --blue-light: #E0EDF8;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.03);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.06), 0 2px 6px rgba(0,0,0,0.04);
-  --shadow-lg: 0 12px 32px rgba(0,0,0,0.1);
-  --radius: 14px;
-  --radius-sm: 10px;
-  --radius-lg: 18px;
-  --radius-xl: 24px;
-  --tap: 48px; /* minimum tap target */
+  --bg: #F5EDE3;
+  --bg-warm: #EDE4D8;
+  --card: #FFFCF8;
+  --card-elevated: #FFFFFF;
+  --surface: #EDE4D8;
+  --surface-hover: #E3D9CC;
+  --border: #D6CCBE;
+  --border-light: #E8DFD3;
+  --text: #1A1613;
+  --text-secondary: #5C534A;
+  --text-tertiary: #857A6F;
+  --text-muted: #A69B8E;
+  --accent: #A0613A;
+  --accent-deep: #8B4F2A;
+  --accent-hover: #925832;
+  --accent-light: #E8D2BF;
+  --accent-bg: #F8EFE5;
+  --accent-glow: rgba(160, 97, 58, 0.12);
+  --green: #3D7C3D;
+  --green-light: #E6F0E6;
+  --red: #B83030;
+  --red-light: #F8E4E4;
+  --yellow: #9E7510;
+  --yellow-light: #FAF0D2;
+  --blue: #3B6FA0;
+  --blue-light: #E2EEF6;
+  --shadow-sm: 0 1px 2px rgba(26,22,19,0.04), 0 2px 8px rgba(26,22,19,0.03);
+  --shadow-md: 0 4px 16px rgba(26,22,19,0.07), 0 1px 4px rgba(26,22,19,0.04);
+  --shadow-lg: 0 8px 40px rgba(26,22,19,0.12), 0 2px 8px rgba(26,22,19,0.06);
+  --shadow-warm: 0 8px 32px rgba(160, 97, 58, 0.08);
+  --radius: 16px;
+  --radius-sm: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --tap: 48px;
 }
 
 html { -webkit-text-size-adjust: 100%; }
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--bg);
+  background-image: linear-gradient(180deg, #F0E6DA 0%, #F5EDE3 200px, #F5EDE3 100%);
+  background-attachment: fixed;
   color: var(--text);
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
@@ -53,7 +59,6 @@ a { -webkit-tap-highlight-color: transparent; }
 
 ::-webkit-scrollbar { width: 0; height: 0; }
 
-/* Prevent zoom on input focus (iOS) */
 input[type="text"], input[type="number"], input[type="date"], input[type="email"],
 input[type="tel"], input[type="url"], textarea, select {
   font-size: 16px;

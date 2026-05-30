@@ -1,44 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap');
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-  --bg: #FDFAF6;
+  --bg: #FAF7F2;
   --card: #FFFFFF;
-  --surface: #F5F0EA;
-  --border: #E8E0D4;
-  --text: #1A1A1A;
+  --surface: #F0EBE3;
+  --surface-hover: #E8E1D6;
+  --border: #DDD5C9;
+  --border-light: #EAE4DA;
+  --text: #000000;
   --text-secondary: #555555;
-  --text-tertiary: #888888;
-  --accent: #C67D4A;
-  --accent-light: #F5E6D8;
-  --accent-dark: #A0613A;
-  --green: #3D8B37;
-  --green-light: #E8F5E4;
-  --red: #C44A4A;
-  --red-light: #FDE8E8;
-  --yellow: #D4A017;
-  --yellow-light: #FFF8E1;
-  --blue: #4A7CC4;
-  --blue-light: #E3EEF9;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
-  --shadow-lg: 0 8px 24px rgba(0,0,0,0.1);
-  --radius: 12px;
-  --radius-sm: 8px;
-  --radius-lg: 16px;
+  --text-tertiary: #7A7A7A;
+  --text-muted: #999999;
+  --accent: #B8693B;
+  --accent-hover: #A05A30;
+  --accent-light: #F3E4D5;
+  --accent-bg: #FDF6EF;
+  --green: #2D7A2D;
+  --green-light: #E4F2E4;
+  --green-bg: #F0F8F0;
+  --red: #C03030;
+  --red-light: #FCE8E8;
+  --yellow: #B8860B;
+  --yellow-light: #FFF5D6;
+  --blue: #2E6BB0;
+  --blue-light: #E0EDF8;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.03);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.06), 0 2px 6px rgba(0,0,0,0.04);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.1);
+  --radius: 14px;
+  --radius-sm: 10px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --tap: 48px; /* minimum tap target */
 }
 
+html { -webkit-text-size-adjust: 100%; }
 body {
-  font-family: 'Inter', -apple-system, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--bg);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
+  min-height: 100dvh;
+  overscroll-behavior: none;
 }
 
-input, textarea, select, button { font-family: inherit; font-size: inherit; }
-button { cursor: pointer; }
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+input, textarea, select, button { font-family: inherit; font-size: 16px; }
+button { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+a { -webkit-tap-highlight-color: transparent; }
+
+::-webkit-scrollbar { width: 0; height: 0; }
+
+/* Prevent zoom on input focus (iOS) */
+input[type="text"], input[type="number"], input[type="date"], input[type="email"],
+input[type="tel"], input[type="url"], textarea, select {
+  font-size: 16px;
+}

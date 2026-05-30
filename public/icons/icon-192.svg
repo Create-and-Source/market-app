@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <rect width="192" height="192" rx="34" fill="#A0613A"/>
+  <g transform="translate(96,88)" stroke="#FDFAF6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="-30" y="-10" width="60" height="48" rx="6"/>
+    <path d="M-15,-10 C-15,-32 15,-32 15,-10"/>
+  </g>
+  <text x="96" y="118" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="28" fill="#FDFAF6">M</text>
+</svg>
